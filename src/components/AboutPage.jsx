@@ -9,17 +9,19 @@ import "./styles.css";
 import Projects from "./Projects";
 import Hero from "./Home";
 
-function HomePage() {
+function AboutPage() {
   return (
-    <div>
-      <Header />
-      <Hero />
-      <AboutMe />
-      <Projects />
-      <Skills />
-      <Footer />
-    </div>
+ 
+      <div>
+        <Header />
+        <Hero />
+        <AboutMe />
+        <Projects />
+        <Skills />
+        <Footer />
+      </div>
+   
   );
 }
 
-export default HomePage;
+export default AboutPage;
