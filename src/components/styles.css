@@ -1,9 +1,20 @@
+#about,
+#portfolio,
+#skills,
+#hero,
+.projects-heading,
+.project-list {
+  margin: 30px;
+}
+#skills {
+  padding-bottom: 20px;
+}
 .navbar-nav {
   margin-right: 20px; /* Adjust the margin as needed */
 }
 
 .navbar-brand {
-  margin-left: 20px; /* Adjust the margin as needed */
+  margin-left: 20px;
 }
 
 footer {
@@ -36,4 +47,33 @@ footer {
 
 .contact-info a {
   margin: 0 10px;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Grid with auto-fit columns */
+  gap: 20px; /* Gap between grid items */
+}
+
+.project-card {
+  color: black;
+}
+#portfolio-header {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  padding: 30px;
+  background-color: rgb(38, 28, 93);
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.text-info {
+  text-align: left;
 }
