@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Modal, Button } from "react-bootstrap";
 
 const ContactForm = () => {
+  const [showModal, setShowModal] = useState(false);
+
   const handleSubmit = (event) => {
     event.preventDefault();
     // Handle form submission logic here
+    setShowModal(true);
   };
 
+  const handleCloseModal = () => {
+    setShowModal(false);
+    window.location.reload();
+  };
   return (
     <div className="contact-page">
       <h2>Contact Form</h2>
@@ -52,6 +59,18 @@ const ContactForm = () => {
           Submit
         </button>
       </form>
+      {/* Success modal */}
+      <Modal show={showModal} onHide={handleCloseModal}>
+        <Modal.Header closeButton>
+          <Modal.Title>Success!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>Your message has been sent successfully.</Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleCloseModal}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 };
