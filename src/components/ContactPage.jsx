@@ -8,15 +8,13 @@ import Footer from "./Footer";
 import "./styles.css";
 import Projects from "./Projects";
 import Hero from "./Home";
+import ContactForm from "./ContactForm";
 
 function ContactPage() {
   return (
     <div>
       <Header />
-      <Hero />
-      <AboutMe />
-      <Projects />
-      <Skills />
+      <ContactForm />
       <Footer />
     </div>
   );
