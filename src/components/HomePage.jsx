@@ -15,7 +15,6 @@ function HomePage() {
       <Header />
       <Hero />
       <AboutMe />
-      <Projects />
       <Skills />
       <Footer />
     </div>

@@ -11,16 +11,11 @@ import Hero from "./Home";
 
 function AboutPage() {
   return (
- 
-      <div>
-        <Header />
-        <Hero />
-        <AboutMe />
-        <Projects />
-        <Skills />
-        <Footer />
-      </div>
-   
+    <div>
+      <Header />
+      <Projects />
+      <Footer />
+    </div>
   );
 }
 
