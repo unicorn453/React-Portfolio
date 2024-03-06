@@ -9,7 +9,7 @@ import "./styles.css";
 import Projects from "./Projects";
 import Hero from "./Home";
 
-function HomePage() {
+function ContactPage() {
   return (
     <div>
       <Header />
@@ -22,4 +22,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default ContactPage;
