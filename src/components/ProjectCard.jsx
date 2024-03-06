@@ -1,11 +1,12 @@
 import React from "react";
+// import projectsData from "./projectsData.json";
 
-const ProjectCard = () => {
+const ProjectCard = ({ title, description, link }) => {
   return (
     <div className="project-card">
-      <h3>Project Title</h3>
-      <p>Description</p>
-      <a href="#">View Project</a>
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <a href={link}>View Project</a>
     </div>
   );
 };
