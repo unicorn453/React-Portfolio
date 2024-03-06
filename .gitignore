@@ -128,3 +128,14 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+# additional packages maually added
+.DS_Store
+!.vscode/extensions.json
+.vscode/*
+*.local
+*.sw?
+*.sln
+*.njsproj
+*.ntvs*
+*.suo
+.idea
