@@ -1,9 +1,13 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { Modal, Button } from "react-bootstrap";
 
 const ContactForm = () => {
   const [showModal, setShowModal] = useState(false);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -13,8 +17,22 @@ const ContactForm = () => {
 
   const handleCloseModal = () => {
     setShowModal(false);
-    window.location.reload();
+    // Reset form data
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
   return (
     <div className="contact-page">
       <h2>Contact Form</h2>
@@ -27,6 +45,8 @@ const ContactForm = () => {
             type="text"
             id="name"
             name="name"
+            value={formData.name}
+            onChange={handleChange}
             required
             className="form-control"
           />
@@ -39,6 +59,8 @@ const ContactForm = () => {
             type="email"
             id="email"
             name="email"
+            value={formData.email}
+            onChange={handleChange}
             required
             className="form-control"
           />
@@ -50,6 +72,8 @@ const ContactForm = () => {
           <textarea
             id="message"
             name="message"
+            value={formData.message}
+            onChange={handleChange}
             rows="4"
             required
             className="form-control"
