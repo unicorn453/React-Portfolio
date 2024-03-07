@@ -122,3 +122,33 @@ textarea.form-control {
 .contact-page h2 {
   text-align: center;
 }
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+  margin: auto;
+  display: block;
+}
+
+/* Style the carousel control arrows */
+.carousel-control-prev,
+.carousel-control-next {
+  background-image: none; /* Remove the default background image */
+  background-color: rgb(136, 131, 131);
+  width: 90px !important;
+  height: 200px;
+
+  opacity: 0.5;
+
+  transform: translateY(50%);
+}
+
+/* Style the hover effect on the carousel control arrows */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1; /* Change the opacity on hover */
+}
