@@ -5,7 +5,7 @@ import AboutMe from "./AboutMe";
 import Header from "./Header";
 import Skills from "./Skills";
 import Footer from "./Footer";
-import "./styles.css";
+import "../styles.css";
 import Projects from "./Projects";
 import Hero from "./Home";
 
