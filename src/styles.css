@@ -49,13 +49,15 @@ footer {
   margin: 0 10px;
 }
 
-.project-list {
+.project-grid {
   display: grid;
   grid-template-columns: repeat(
     auto-fit,
     minmax(300px, 1fr)
   ); /* Grid with auto-fit columns */
   gap: 20px; /* Gap between grid items */
+  margin-bottom: 50px;
+  margin: 50px;
 }
 
 .project-card {
@@ -132,6 +134,7 @@ textarea.form-control {
 .carousel-item img {
   margin: auto;
   display: block;
+  max-height: 350px;
 }
 
 /* Style the carousel control arrows */
@@ -151,4 +154,14 @@ textarea.form-control {
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   opacity: 1; /* Change the opacity on hover */
+}
+.carousel-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure the container takes up the full height of the carousel item */
+}
+
+.carousel-item {
+  text-align: center; /* Center align the text within each carousel item */
 }

@@ -1,13 +1,21 @@
 import React from "react";
-import projectsData from "../data/projectsData.json";
 
-const ProjectCard = ({ title, description, link, image }) => {
+const ProjectCard = ({ title, description, link, image, onClick, github }) => {
+  const handleClick = () => {
+    onClick();
+  };
+
   return (
     <div className="project-card">
       <h3>{title}</h3>
-      <img src={image} alt={title} />
+      <img src={image} alt={title} onClick={handleClick} />
       <p>{description}</p>
-      <a href={link}>View Project</a>
+      <div>
+        <a href={link}>View Project</a>
+      </div>
+      <div>
+        <a href={github}>GitHub repo</a>
+      </div>
     </div>
   );
 };

@@ -20,7 +20,9 @@ const ProjectList = ({ projects, setActiveProject }) => {
               title={project.title}
               description={project.description}
               link={project.link}
+              github={project.github}
               image={project.image}
+              onClick={() => handleClick(project.id)} // Pass handleClick to ProjectCard
             />
           </div>
         ))}
