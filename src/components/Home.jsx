@@ -1,5 +1,5 @@
 import React from "react";
-import headshot from "public/assets/portfolio4.png";
+import headshot from "./assets/portfolio4.png";
 
 const Hero = () => {
   return (
