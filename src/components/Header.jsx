@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
+
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [showCollapsedMenu, setShowCollapsedMenu] = useState(false);
+  const toggleMenu = () => {
+    setShowCollapsedMenu(!showCollapsedMenu);
+  };
   return (
     <header>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -11,6 +16,7 @@ const Header = () => {
         <button
           className="navbar-toggler"
           type="button"
+          onClick={toggleMenu}
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
@@ -20,7 +26,10 @@ const Header = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          className="collapse navbar-collapse justify-content-end"
+          className={
+            "collapse navbar-collapse justify-content-end" +
+            (showCollapsedMenu ? " show" : "")
+          }
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav">
@@ -31,7 +40,7 @@ const Header = () => {
             </li>
             <li className="nav-item">
               <Link to="/about" className="nav-link">
-                About
+                Projects
               </Link>
             </li>
             <li className="nav-item">
