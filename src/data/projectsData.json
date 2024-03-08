@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Law Firm Website",
     "description": "Webflow-designed website",
-    "link": "#https://www.debusschere-law.com/",
+    "link": "https://www.debusschere-law.com/",
     "image": "/assets/lawfirm.png"
   },
   {
@@ -11,15 +11,15 @@
     "title": "Quiz App",
     "description": "Quiz with series of multiple-choice questions",
     "link": "#unicorn453.github.io/Quiz-Code/",
-    "github": "#https://github.com/unicorn453/Quiz-Code",
+    "github": "https://github.com/unicorn453/Quiz-Code",
     "image": "/assets/Quiz-Code.png"
   },
   {
     "id": 3,
     "title": "Gallery Website",
     "description": "In progress demo website.",
-    "link": "#https://unicorn453.github.io/project-demo/",
-    "github": "#https://github.com/unicorn453/project-demo",
+    "link": "https://unicorn453.github.io/project-demo/",
+    "github": "https://github.com/unicorn453/project-demo",
     "image": "/assets/gallery.png"
   },
   {
@@ -27,7 +27,7 @@
     "title": "Weather Dashboard",
     "description": "Weather dashboard app that shows the current weather and a 5-day forecast for any city",
     "link": "#unicorn453.github.io/Weather-Dashboard/",
-    "github": "#https://github.com/unicorn453/Weather-Dashboard",
+    "github": "https://github.com/unicorn453/Weather-Dashboard",
     "image": "/assets/Weather-Dashboard1.png"
   },
   {
@@ -35,7 +35,7 @@
     "title": "Travel Mate Collab",
     "description": "A travel app.",
     "link": "#skovvuri.github.io/travel-mate/",
-    "github": "#https://github.com/Skovvuri/travel-mate",
+    "github": "https://github.com/Skovvuri/travel-mate",
     "image": "/assets/Travel-Mate.png"
   },
   {
@@ -43,7 +43,7 @@
     "title": "Work Day Scheduler App",
     "description": "App for scheduling daily tasks.",
     "link": "#unicorn453.github.io/Work-Scheduler/",
-    "github": "#https://github.com/unicorn453/Work-Scheduler",
+    "github": "https://github.com/unicorn453/Work-Scheduler",
     "image": "/assets/Work-Scheduler.png"
   }
 ]

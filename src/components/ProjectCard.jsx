@@ -11,10 +11,14 @@ const ProjectCard = ({ title, description, link, image, onClick, github }) => {
       <img src={image} alt={title} onClick={handleClick} />
       <p>{description}</p>
       <div>
-        <a href={link}>View Project</a>
+        <a href={link} target="_blank">
+          View Project
+        </a>
       </div>
       <div>
-        <a href={github}>GitHub repo</a>
+        <a href={github} target="_blank">
+          GitHub repo
+        </a>
       </div>
     </div>
   );
