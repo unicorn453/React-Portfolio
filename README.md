@@ -9,10 +9,10 @@ Link to the deployed project: [My Portfolio](https://react-portfolio-kirila-ruse
 ### Screenshots
 
 Here's what the home page looks like:
-![Screenshot of the home page](./src/assets/HomePage.png)
+![Screenshot of the home page](./public/assets/HomePage.png)
 
 Here's a glimpse of the projects page:
-![Screenshot of the projects page](./src/assets/ProjectPage.png)
+![Screenshot of the projects page](./public/assets/ProjectPage.png)
 
 ## Installation
 
