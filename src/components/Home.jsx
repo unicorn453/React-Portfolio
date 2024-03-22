@@ -17,12 +17,12 @@ const Hero = () => {
             at a time.
           </p>
           <p>
-            Portfolio:{" "}
+            Resume:{" "}
             <a
               href="https://docs.google.com/document/d/1G8IO7Yobsy4sQp5bVngVavKi0QQ6ZA1lIQ0TZ6V9ozk/edit?usp=sharing"
               target="_blank"
             >
-              View Portfolio
+              View CV
             </a>
           </p>
         </div>

@@ -45,5 +45,13 @@
     "link": "#unicorn453.github.io/Work-Scheduler/",
     "github": "https://github.com/unicorn453/Work-Scheduler",
     "image": "/assets/Work-Scheduler.png"
+  },
+  {
+    "id": 7,
+    "title": "Pouch Finance Tracker",
+    "description": "Web application designed to manage finances.",
+    "link": "https://pouch-finance-tracker.netlify.app/",
+    "github": "https://github.com/totes7/Pouch-Finance-Tracker",
+    "image": "/assets/PouchFinance.png"
   }
 ]
