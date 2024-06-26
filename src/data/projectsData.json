@@ -10,7 +10,7 @@
     "id": 2,
     "title": "Quiz App",
     "description": "Quiz with series of multiple-choice questions",
-    "link": "#unicorn453.github.io/Quiz-Code/",
+    "link": "https://unicorn453.github.io/Quiz-Code/",
     "github": "https://github.com/unicorn453/Quiz-Code",
     "image": "/assets/Quiz-Code.png"
   },
@@ -18,7 +18,7 @@
     "id": 3,
     "title": "Gallery Website",
     "description": "In progress demo website.",
-    "link": "https://unicorn453.github.io/project-demo/",
+    "link": "https://majestic-finearts.netlify.app/",
     "github": "https://github.com/unicorn453/project-demo",
     "image": "/assets/gallery.png"
   },
@@ -26,7 +26,7 @@
     "id": 4,
     "title": "Weather Dashboard",
     "description": "Weather dashboard app that shows the current weather and a 5-day forecast for any city",
-    "link": "#unicorn453.github.io/Weather-Dashboard/",
+    "link": "https://unicorn453.github.io/Weather-Dashboard/",
     "github": "https://github.com/unicorn453/Weather-Dashboard",
     "image": "/assets/Weather-Dashboard1.png"
   },
@@ -34,7 +34,7 @@
     "id": 5,
     "title": "Travel Mate Collab",
     "description": "A travel app.",
-    "link": "#skovvuri.github.io/travel-mate/",
+    "link": "https://skovvuri.github.io/travel-mate/",
     "github": "https://github.com/Skovvuri/travel-mate",
     "image": "/assets/Travel-Mate.png"
   },
@@ -42,7 +42,7 @@
     "id": 6,
     "title": "Work Day Scheduler App",
     "description": "App for scheduling daily tasks.",
-    "link": "#unicorn453.github.io/Work-Scheduler/",
+    "link": "https://unicorn453.github.io/Work-Scheduler/",
     "github": "https://github.com/unicorn453/Work-Scheduler",
     "image": "/assets/Work-Scheduler.png"
   },
@@ -53,5 +53,13 @@
     "link": "https://pouch-finance-tracker.netlify.app/",
     "github": "https://github.com/totes7/Pouch-Finance-Tracker",
     "image": "/assets/PouchFinance.png"
+  },
+  {
+    "id": 8,
+    "title": "UV Tracker",
+    "description": "Web application to help you track the UV index (BG).",
+    "link": "https://uv-tracker453.netlify.app/",
+    "github": "https://github.com/unicorn453/UV-Tracker",
+    "image": "/assets/UV-tracker.png"
   }
 ]

@@ -8,21 +8,38 @@ const ContactForm = () => {
     email: "",
     message: "",
   });
+  const [error, setError] = useState(null);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // Handle form submission logic here
-    setShowModal(true);
+
+    try {
+      const response = await fetch("http://localhost:5001/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("Network response was not ok");
+      }
+
+      setShowModal(true);
+    } catch (error) {
+      setError(error.message);
+    }
   };
 
   const handleCloseModal = () => {
     setShowModal(false);
-    // Reset form data
     setFormData({
       name: "",
       email: "",
       message: "",
     });
+    setError(null);
   };
 
   const handleChange = (event) => {
@@ -36,6 +53,7 @@ const ContactForm = () => {
   return (
     <div className="contact-page">
       <h2>Contact Form</h2>
+      {error && <p className="error-message">{error}</p>}
       <form onSubmit={handleSubmit} className="contact-form">
         <div className="form-group">
           <label htmlFor="name" className="form-label">
@@ -83,7 +101,6 @@ const ContactForm = () => {
           Submit
         </button>
       </form>
-      {/* Success modal */}
       <Modal show={showModal} onHide={handleCloseModal}>
         <Modal.Header closeButton>
           <Modal.Title>Success!</Modal.Title>
