@@ -61,5 +61,12 @@
     "link": "https://uv-tracker453.netlify.app/",
     "github": "https://github.com/unicorn453/UV-Tracker",
     "image": "/assets/UV-tracker.png"
+  },
+  {
+    "id": 9,
+    "title": "API Integration Validator",
+    "description": "Checking accuracy of API responses generated from AI.",
+    "link": "https://apidna.eu/validator-tool/",
+    "image": "/assets/validator_tool.png"
   }
 ]
