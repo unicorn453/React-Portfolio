@@ -1,55 +1,17 @@
-import React, { useState } from "react";
-
+import React from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [showCollapsedMenu, setShowCollapsedMenu] = useState(false);
-  const toggleMenu = () => {
-    setShowCollapsedMenu(!showCollapsedMenu);
-  };
   return (
-    <header>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a className="navbar-brand" href="#">
-          Kirila Ruseva
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          onClick={toggleMenu}
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div
-          className={
-            "collapse navbar-collapse justify-content-end" +
-            (showCollapsedMenu ? " show" : "")
-          }
-          id="navbarSupportedContent"
-        >
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/about" className="nav-link">
-                Projects
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/contact" className="nav-link">
-                Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
+    <header className="custom-header">
+      <div className="header-left">
+        <span className="header-logo"></span>
+        <span className="header-name">Kirila Ruseva</span>
+      </div>
+      <nav className="header-nav">
+        <Link to="/" className="header-link">Home</Link>
+        <Link to="/about" className="header-link">Projects</Link>
+        <Link to="/contact" className="header-link">Contact</Link>
       </nav>
     </header>
   );
